@@ -11,7 +11,7 @@ content = st.text_input("여기에 주제를 입력해주세요:")
 
 if st.button('시 작성 요청하기'):
     with st.spinner('제이드 생각 중...'):
-        result = llm.invoke(content + "에 대한 시를 써줘") 
+        result = llm.invoke(f"{content}에 대한 시를 써줘") 
         st.write(result)
 
 
